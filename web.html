@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Retro game music, chiptunes ripped from hundreds of games. Play directly in your browser or download vgm, vgz or ogg files.">
+	<title>Out Run vgm music &bull; VGMRips</title>
+	<link rel="icon" type="image/ico" href="https://vgmrips.net/packs/images/favicon.ico" />
+	<link rel="shortcut icon" href="https://vgmrips.net/packs/images/favicon.ico" />
+	<link rel="search" href="https://vgmrips.net/packs/opensearch.xml" type="application/opensearchdescription+xml" title="VGMRips" />
+	
+	
+	
+	<link href="https://vgmrips.net/packs/css/icomoon.css?ver=1.2" rel="stylesheet">
+	<link href="https://vgmrips.net/packs/css/darkly/style.css" rel="stylesheet">
+	<link href="https://vgmrips.net/packs/css/darkly/player.css" rel="stylesheet">
+	<link href="https://vgmrips.net/packs/css/star-rating.css" rel="stylesheet">
+	<link href="https://vgmrips.net/packs/../chat/chat2.css" rel="stylesheet">
+	<meta property="fb:app_id" content="1742915259328329" />
+	<meta property="og:image" content="https://vgmrips.net/files/Arcade/SegaSys/Out_Run_%28Arcade%29.png" />
+	<meta name="twitter:image" content="https://vgmrips.net/files/Arcade/SegaSys/Out_Run_%28Arcade%29.png" />
+	<meta property="og:description" content="This was the first VGM v1.51 pack ever.
+The first rip was made using MAME VGM 0.134.
+
+I reripped all tracks in October 2011 with M1,
+because a fix in MAME's SegaPCM emulation broke
+this pack. The fixed SegaPCM core is present in
+VGMPlay but disabled since then to not break
+this pack.
+Eventually I trimmed the tracks in January 2013
+(yes, more then a year later), redid the
+extended loop versions and recorded the tracks
+that include SFX.
+I kept the edited screenshot for historic
+purposes. (It was made to fit the SMSPower.org
+screenshot rules.)
+
+Last Wave (with SFX) was made using MAME 0.144,
+all other tracks with M1 0.7.9a1.
+
+In order to record Last Wave (with Seashore
+SFX) from the Highscore screen, I had to slow
+the main cpu down to 10%. Else it would cut the
+song.
+
+The extended versions of the songs are exactly
+the same songs as normal, but with a longer
+loop. The original loops got on my nerves.
+Note: I hacked the VGM Passing Breeze
+(Extended) a bit to make the loop more fluid.
+
+These VGMs use a fixed opr-10188.71 sound ROM.
+Thanks to muteKI telling me about it and to
+reassembler for posting it on his website.
+-Valley Bell
+
+
+In 2014, Sega and M2 developed a 3D remake
+of Out Run on the Nintendo 3DS, called
+3D Out Run (not to be confused with Out Run 3D
+on the Master System). They decided to spice
+things up and commissioned Manabu Namiki and
+Jane-Evelyn Nisperos (aka Chibi-Tech) to
+compose two new songs for 3D Out Run.
+
+The songs were composed for the Out Run sound
+driver and hardware specifically; in fact, the
+songs were burned to an EPROM and recorded
+on an actual Out Run arcade board for the OST
+release.
+
+The song data was extracted from the game ROM
+and the driver was obtained from a partial RAM
+dump. After some editing in a hex editor, I was
+able to play the songs in Hoot and MAME, I used
+MAME to log the VGMs.
+
+-ctr
+
+
+Size reduction:
+1. vgm_sro: 57.4 MB -&gt; 54.2 MB (94.5 %)
+2. vgm_cmp: 54.2 MB -&gt; 1.78 MB (3.29 %)
+Total: 57.4 MB -&gt; 1.78 MB (3.11 %)" />
+	<meta property="og:url"content="https://vgmrips.net/packs/pack/out-run-arcade" />
+	<meta property="og:title" content="VGMRips: Out Run" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@vgmrips" />
+	<meta name="twitter:creator" content="@vgmrips" />
+	<meta name="twitter:title" content="Out Run" />
+	<meta name="twitter:url" content="https://vgmrips.net/packs/pack/out-run-arcade" />
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body id="main">
+<header class="navbar navbar-default navbar-static-top" id='hdr'><div class="container">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<section class="navbar-header">
+		<a class="navbar-brand" href="https://vgmrips.net/packs">vgmrips</a>
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</section>
+
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<nav class="collapse navbar-collapse" id="nav" role="navigation">
+		<ul class="nav navbar-nav">
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Browse <b class="caret"></b></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://vgmrips.net/packs"><span class="icon icon-home"></span> Home</a></li>
+					<li class="divider"></li>
+					<li><a href="https://vgmrips.net/packs/top"><span class="icon icon-star3"></span> Top packs</a></li>
+					<li><a href="https://vgmrips.net/packs/latest"><span class="icon icon-latest"></span> Latest packs</a></li>
+					<li class="divider"></li>
+					<li><a href="https://vgmrips.net/packs/chips"><span class="icon icon-chip"></span> Sound Chips</a></li>
+					<li><a href="https://vgmrips.net/packs/composers"><span class="icon icon-composer"></span> Composers</a></li>
+					<li><a href="https://vgmrips.net/packs/companies"><span class="icon icon-company"></span> Companies</a></li>
+					<li><a href="https://vgmrips.net/packs/systems"><span class="icon icon-system"></span> Systems</a></li>
+					<li><a href="https://vgmrips.net/packs/authors"><span class="icon icon-user"></span> Authors</a></li>
+					<li class="divider"></li>
+					<li><a href="https://vgmrips.net/forum"><span class="icon icon-forum"></span> Forum</a></li>
+					<li><a href="https://vgmrips.net/wiki/Main_Page"><span class="icon icon-file"></span> Wiki</a></li>
+				</ul>
+			</li>
+			<li><a rel="nofollow" href="https://vgmrips.net/packs/random"><span class="icon icon-random"></span> Random</a></li>
+		</ul>
+		<form class="navbar-form navbar-left" role="search" action="https://vgmrips.net/packs/search">
+			<div class="form-group">
+				<input name="q" type="text" class="form-control" placeholder="Search">
+			</div>
+		</form>
+		<ul class="nav navbar-nav navbar-right">
+				<li><a href="https://vgmrips.net/forum/ucp.php?mode=login&amp;redirect=https://vgmrips.net/packs">Login</a></li>
+				<li><a href="https://vgmrips.net/forum/ucp.php?mode=register">Register</a></li>
+		</ul>
+	</nav><!-- /.navbar-collapse -->
+</div><!-- /.container-fluid --></header>
+
+<article id="content"><div class="container">
+<div class="row">
+<section class="col-md-8">
+
+<h1>Out Run</h1>
+
+<div id="player">
+	<nav>
+		<div class="rightControls btn-group">
+			<button class="btn btn-primary" data-toggle="dropdown" data-target="#volumeBar"><span class="icon icon-volume-medium"></span></button>
+			<button class="btn btn-primary rew"><span class="icon icon-prev"></span></button>
+			<button class="btn btn-primary fwd"><span class="icon icon-next"></span></button>
+		</div>
+		<div class="pull-right" id="volumeDiv">
+			<div id="volumeBar" class="progress"><div class="progress-bar progress-bar-info"></div></div>
+		</div>
+		<div class="pull-left songStatus">
+			<div class="btn-group">
+				<button type="button" class="btn btn-primary" id="playBtn"><span class="icon icon-play"></span></button>
+			</div>
+		</div>
+		<div class="pull-left" style="padding-left: 10px">
+			<div class="title"></div>
+			<div class="time"></div>
+		</div>
+		<div class="clearfix"></div>
+	</nav>
+
+	<div id="position" class="progress">
+		<div class="playing progress-bar progress-bar-success" style="width: 0"></div>
+		<div class="loading progress-bar" style="width: 0"></div>
+	</div>
+</div>
+
+<div id="beforePlaylist" class="row">
+	<section class="col-sm-3 hardware">
+		<small>Sound chips:</small>
+		<span class="badge"><a href="https://vgmrips.net/packs/chip/ym2151">YM2151</a></span>
+		<span class="badge"><a href="https://vgmrips.net/packs/chip/segapcm">SegaPCM</a></span>
+		<br />
+		<small>System:</small>
+		<span class="badge"><a href="https://vgmrips.net/packs/system/sega/arcade">Arcade</a></span></section>
+	<section class="col-sm-6 composers">
+		<small>Composers:</small>
+		<span class="badge"><a href="https://vgmrips.net/packs/composer/hiroshi-kawaguchi">Hiroshi Kawaguchi</a></span>
+		<span class="badge"><a href="https://vgmrips.net/packs/composer/jane-evelyn-nisperos">Jane-Evelyn Nisperos</a> (3DS)</span>
+		<span class="badge"><a href="https://vgmrips.net/packs/composer/manabu-namiki">Manabu Namiki</a> (3DS)</span>
+	</section>
+	<section class="col-sm-3 companies">
+		<small>Developers:</small>
+		<span class="badge"><a href="https://vgmrips.net/packs/company/sega-am2">Sega AM2</a></span>		<span class="badge"><a href="https://vgmrips.net/packs/company/m2">M2</a> (3DS)</span><br />
+		<small>Publisher:</small>
+		<span class="badge"><a href="https://vgmrips.net/packs/company/sega?publisher">Sega</a></span><br />
+		<small>Release date:</small>
+		1986 / 2014-04-23 (3DS)
+	</section>
+
+	<div class="clearfix"></div>
+</div>
+
+<div id="details">
+<table class="playlist">
+	<tbody>
+		<tr id="song-01-magical-sound-shower" data-songurl="01-magical-sound-shower" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/01%20Magical%20Sound%20Shower.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/01 Magical Sound Shower.vgz" data-duration="427.76848072562" data-order="01" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>01.</small></td>
+			<td class="title"><a class="beginPlay" href="#01-magical-sound-shower">Magical Sound Shower</a> <span class="time">5:59 + 1:02</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/01 Magical Sound Shower.vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-02-passing-breeze" data-songurl="02-passing-breeze" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/02%20Passing%20Breeze.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/02 Passing Breeze.vgz" data-duration="358.41653061224" data-order="02" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>02.</small></td>
+			<td class="title"><a class="beginPlay" href="#02-passing-breeze">Passing Breeze</a> <span class="time">5:20 + 0:31</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/02 Passing Breeze.vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-03-splash-wave" data-songurl="03-splash-wave" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/03%20Splash%20Wave.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/03 Splash Wave.vgz" data-duration="355.53650793651" data-order="03" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>03.</small></td>
+			<td class="title"><a class="beginPlay" href="#03-splash-wave">Splash Wave</a> <span class="time">5:42 + 0:07</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/03 Splash Wave.vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-04-last-wave" data-songurl="04-last-wave" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/04%20Last%20Wave.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/04 Last Wave.vgz" data-duration="92.892947845805" data-order="04" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>04.</small></td>
+			<td class="title"><a class="beginPlay" href="#04-last-wave">Last Wave</a> <span class="time">1:33</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/04 Last Wave.vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-05-magical-sound-shower-extended" data-songurl="05-magical-sound-shower-extended" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/05%20Magical%20Sound%20Shower%20%28Extended%29.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/05 Magical Sound Shower (Extended).vgz" data-duration="620.48047619048" data-order="05" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>05.</small></td>
+			<td class="title"><a class="beginPlay" href="#05-magical-sound-shower-extended">Magical Sound Shower (Extended)</a> <span class="time">5:44 + 4:29</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/05 Magical Sound Shower (Extended).vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-06-passing-breeze-extended" data-songurl="06-passing-breeze-extended" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/06%20Passing%20Breeze%20%28Extended%29.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/06 Passing Breeze (Extended).vgz" data-duration="689.62453514739" data-order="06" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>06.</small></td>
+			<td class="title"><a class="beginPlay" href="#06-passing-breeze-extended">Passing Breeze (Extended)</a> <span class="time">5:52 + 5:31</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/06 Passing Breeze (Extended).vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-07-splash-wave-extended" data-songurl="07-splash-wave-extended" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/07%20Splash%20Wave%20%28Extended%29.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/07 Splash Wave (Extended).vgz" data-duration="702.38498866213" data-order="07" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>07.</small></td>
+			<td class="title"><a class="beginPlay" href="#07-splash-wave-extended">Splash Wave (Extended)</a> <span class="time">5:48 + 5:48</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/07 Splash Wave (Extended).vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-08-last-wave-with-seashore-sfx" data-songurl="08-last-wave-with-seashore-sfx" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/08%20Last%20Wave%20%28with%20Seashore%20SFX%29.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/08 Last Wave (with Seashore SFX).vgz" data-duration="92.892789115646" data-order="08" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>08.</small></td>
+			<td class="title"><a class="beginPlay" href="#08-last-wave-with-seashore-sfx">Last Wave (with Seashore SFX)</a> <span class="time">1:33</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/08 Last Wave (with Seashore SFX).vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-09-seashore-sfx" data-songurl="09-seashore-sfx" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/09%20Seashore%20SFX.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/09 Seashore SFX.vgz" data-duration="83.598798185941" data-order="09" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>09.</small></td>
+			<td class="title"><a class="beginPlay" href="#09-seashore-sfx">Seashore SFX</a> <span class="time">1:24</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/09 Seashore SFX.vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-10-cruising-line" data-songurl="10-cruising-line" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/10%20Cruising%20Line.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/10 Cruising Line.vgz" data-duration="349.39138321995" data-order="10" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>10.</small></td>
+			<td class="title"><a class="beginPlay" href="#10-cruising-line">Cruising Line</a> <span class="time">5:27 + 0:16</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/10 Cruising Line.vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-11-camino-a-mi-amor" data-songurl="11-camino-a-mi-amor" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/11%20Camino%20a%20Mi%20Amor.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/11 Camino a Mi Amor.vgz" data-duration="371.5014739229" data-order="11" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>11.</small></td>
+			<td class="title"><a class="beginPlay" href="#11-camino-a-mi-amor">Camino a Mi Amor</a> <span class="time">3:31 + 2:33</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/11 Camino a Mi Amor.vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr id="song-12-cruising-line-extended" data-songurl="12-cruising-line-extended" data-audiourl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/12%20Cruising%20Line%20%28Extended%29.mp3" data-vgmurl="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/12 Cruising Line (Extended).vgz" data-duration="656.63136054422" data-order="12" artist="Out Run">
+			<td class="fav"></td>
+			<td class="number"><small>12.</small></td>
+			<td class="title"><a class="beginPlay" href="#12-cruising-line-extended">Cruising Line (Extended)</a> <span class="time">5:27 + 5:23</span></td>
+			<td class="links hidden-xs">
+				<div class="pull-right">
+					<div class="btn-group">
+						<div class="btn-group btn-group-xs">
+						<a class="btn btn-primary" target="_blank" rel="nofollow" href="https://vgmrips.net/packs/vgm/Arcade/SegaSys/Out_Run_%28Arcade%29/12 Cruising Line (Extended).vgz"><span class="icon icon-download"></span> Download vgz</a></li>
+						<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+							Add to <span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu dropdown-menu-right" role="menu">
+							<li class="divider"></li>
+							<li role="presentation">
+								<a href="https://vgmrips.net/packs/playlists">Playlists</a>
+							</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr><td></td><td></td><td><b>Total:</b> <span class="time">53:14 + 25:36</span></td></tr>
+	</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+<legend>History</legend>
+<table class="table table-striped table-condensed">
+	<thead>
+	<tr>
+		<th>Version</th>
+		<th>Date</th>
+		<th>Author</th>
+		<th>Description</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>1.00</td>
+		<td>2010-01-01</td>
+		<td><span class="badge"><a href="https://vgmrips.net/packs/author/valleybell?history">Valley Bell</a></span></td>
+		<td>Initial release.
+</td>
+	</tr>
+	<tr>
+		<td>2.00</td>
+		<td>2010-03-03</td>
+		<td><span class="badge"><a href="https://vgmrips.net/packs/author/valleybell?history">Valley Bell</a></span></td>
+		<td>Size reduction
+ (uncompressed: 9.79 MB -&gt; 870 KB) and extended versions of the looped songs added.</td>
+	</tr>
+	<tr>
+		<td>2.01</td>
+		<td>2010-10-27</td>
+		<td><span class="badge"><a href="https://vgmrips.net/packs/author/valleybell?history">Valley Bell</a></span></td>
+		<td>Fixed Passing
+ Breeze and Splash Wave (both versions). The SegaPCM clock was wrong.</td>
+	</tr>
+	<tr>
+		<td>3.00</td>
+		<td>2013-05-05</td>
+		<td><span class="badge"><a href="https://vgmrips.net/packs/author/valleybell?history">Valley Bell</a></span></td>
+		<td>Complete rerip.
+</td>
+	</tr>
+	<tr>
+		<td>4.00</td>
+		<td>2015-05-06</td>
+		<td><span class="badge"><a href="https://vgmrips.net/packs/author/ctr?history">ctr</a></span></td>
+		<td>Added new tracks from
+ 3D Out Run. </td>
+	</tr>
+</tbody>
+</table>
+
+<legend>Size reductions</legend>
+<table class="table table-striped table-condensed"><thead><tr><th>Tool</th><th>From</th><th>To</th><th>%</th></tr></thead>
+	<tbody>
+	<tr><td>vgm_sro</td><td>57.4 MB</td><td>54.2 MB</td><td>94.4%</td></tr>
+	<tr><td>vgm_cmp</td><td>54.2 MB</td><td>1.78 MB</td><td>3.3%</td></tr>
+</tbody>
+</table>
+
+</section>
+
+<section class="col-md-4">
+		<div id="images">
+			<a class="prev disabled" style="display: none" href="#"><span class="icon-arrow-up"></span></a>
+			<div id="imageContainer">
+				<div class="image">
+					<a target="_blank" href="https://vgmrips.net/files/Arcade/SegaSys/Out_Run_%28Arcade%29.png"><img src="https://vgmrips.net/packs/images/large/Arcade/SegaSys/Out_Run_%28Arcade%29.png" alt=""></a>
+				</div>
+			</div>
+			<a class="next" style="display: none" href="#"><span class="icon-arrow-down"></span></a>
+		</div>
+	<div id="rating">
+		<!--
+★☆☆☆☆ Moniz
+★★☆☆☆ Profilename14
+★★★☆☆ cetera
+★★★☆☆ NewRisingSun
+★★★☆☆ krssh
+★★★★☆ grauw
+★★★★☆ DeltaRazero
+★★★★☆ FlurrieFour
+★★★★★ Kaminari
+★★★★★ 2ch-H
+★★★★★ MaliceX
+★★★★★ Hammond Edgar
+★★★★★ ctr
+★★★★★ getter3
+★★★★★ vampirefrog
+★★★★★ mrparn
+★★★★★ bmos
+★★★★★ 1983parrothead
+★★★★★ Pasokon Deacon
+★★★★★ mixmaster
+★★★★★ kyusawamura
+★★★★★ drdevil
+★★★★★ l_oliveira
+★★★★★ LokiStuff
+★★★★★ Furnessly
+★★★★★ vanilla_zombie
+★★★★★ Alianger
+★★★★★ lo zaffo
+★★★★★ fernio
+★★★★★ Paul999
+★★★★★ leycec
+★★★★★ ex_mortis
+★★★★★ Know Name
+★★★★★ Sim
+★★★★★ slamminsam
+★★★★★ Brak
+★★★★★ BlackYoshi485
+★★★★★ franbell1316
+★★★★★ LucianoTheWindowsFan
+★★★★★ Vectorman1
+★★★★★ NoJoTo
+★★★★★ ThatSegaDoodLeon
+★★★★★ ddhhddhh2
+★★★★★ annaBEL
+★★★★★ MDKai
+★★★★★ 7Force
+★★★★★ zerovision
+★★★★★ TotO
+★★★★★ noorimaru
+-->
+		<!-- Please think for yourself -->
+		<div class="stars stars45"></div>
+		<span id="numRatings">49</span> ratings &bull; 8344 downloads &bull; 48773 views
+		<br />
+		
+		You must <a href="https://vgmrips.net/forum/ucp.php?mode=login&amp;redirect=https://vgmrips.net/packs/pack/out-run-arcade">Log in</a> to rate.
+	</div>
+
+	<div id="links">
+		<a class="btn btn-small btn-primary" target="_blank" href="https://vgmrips.net/files/Arcade/SegaSys/Out_Run_%28Arcade%29.zip"><span class="icon-download"></span> Download</a>
+		<a class="btn btn-small btn-primary" target="_blank" href="https://vgmrips.net/forum/viewtopic.php?t=22"><span class="icon-forum"></span> Talk</a>
+		<div class="btn-group">
+			<a title="Tweet this pack" class="btn btn-small btn-default" target="_blank" href="https://twitter.com/intent/tweet?text=Out Run%20%F0%9F%8E%B6&amp;url=https://vgmrips.net/packs/pack/out-run-arcade&amp;hashtags=chiptune,vgmrips" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-twitter"></span></a>
+			<a title="Share this pack on Facebook" class="btn btn-small btn-default" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://vgmrips.net/packs/pack/out-run-arcade&amp;t=%F0%9F%8E%B6%20Out Run" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-facebook2"></span></a>
+			<a title="Share this pack on Google+" class="btn btn-small btn-default" target="_blank" href="https://plus.google.com/share?url=https://vgmrips.net/packs/pack/out-run-arcade" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-google-plus"></span></a>
+			<a title="Share this pack on Reddit" class="btn btn-small btn-default" target="_blank" href="https://www.reddit.com/submit?url=https://vgmrips.net/packs/pack/out-run-arcade&amp;title=Out Run%20on%20VGMRips" onclick="javascript:window.open(this.href,
+  '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;"><span class="icon-reddit"></span></a>
+		</div>
+	</div>
+
+	<div id="qrcode" style="text-align: center; padding: 8px; height: 139px">
+		<img width="123" height="123" style="width: 123px; height: 123px" alt="" src="https://vgmrips.net/packs/qrcode.php?url=out-run-arcade">
+	</div>
+
+	<div class="info">
+		<pre id="notes">This was the first VGM v1.51 pack ever.
+The first rip was made using MAME VGM 0.134.
+
+I reripped all tracks in October 2011 with M1,
+because a fix in MAME's SegaPCM emulation broke
+this pack. The fixed SegaPCM core is present in
+VGMPlay but disabled since then to not break
+this pack.
+Eventually I trimmed the tracks in January 2013
+(yes, more then a year later), redid the
+extended loop versions and recorded the tracks
+that include SFX.
+I kept the edited screenshot for historic
+purposes. (It was made to fit the SMSPower.org
+screenshot rules.)
+
+Last Wave (with SFX) was made using MAME 0.144,
+all other tracks with M1 0.7.9a1.
+
+In order to record Last Wave (with Seashore
+SFX) from the Highscore screen, I had to slow
+the main cpu down to 10%. Else it would cut the
+song.
+
+The extended versions of the songs are exactly
+the same songs as normal, but with a longer
+loop. The original loops got on my nerves.
+Note: I hacked the VGM Passing Breeze
+(Extended) a bit to make the loop more fluid.
+
+These VGMs use a fixed opr-10188.71 sound ROM.
+Thanks to muteKI telling me about it and to
+reassembler for posting it on his website.
+-Valley Bell
+
+
+In 2014, Sega and M2 developed a 3D remake
+of Out Run on the Nintendo 3DS, called
+3D Out Run (not to be confused with Out Run 3D
+on the Master System). They decided to spice
+things up and commissioned Manabu Namiki and
+Jane-Evelyn Nisperos (aka Chibi-Tech) to
+compose two new songs for 3D Out Run.
+
+The songs were composed for the Out Run sound
+driver and hardware specifically; in fact, the
+songs were burned to an EPROM and recorded
+on an actual Out Run arcade board for the OST
+release.
+
+The song data was extracted from the game ROM
+and the driver was obtained from a partial RAM
+dump. After some editing in a hex editor, I was
+able to play the songs in Hoot and MAME, I used
+MAME to log the VGMs.
+
+-ctr
+
+
+Size reduction:
+1. vgm_sro: 57.4 MB -&gt; 54.2 MB (94.5 %)
+2. vgm_cmp: 54.2 MB -&gt; 1.78 MB (3.29 %)
+Total: 57.4 MB -&gt; 1.78 MB (3.11 %)</pre>
+		
+
+		<p class="text-right">
+		&mdash; <a href="https://vgmrips.net/packs/author/valleybell">Valley Bell</a></span> 
+		</p>
+		<p>
+		Source: VGMRips
+		</p>
+	</div>
+
+	<div class="clearfix"></div>
+
+	<h3>Related packs</h3>
+	<table class="table table-striped ellipsize">
+		<tbody>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/fantasy-zone-ii-dx-sega-system-16c"><img src="https://vgmrips.net/packs/images/tiny/Arcade/SegaSys/Fantasy_Zone_II_DX_%28Sega_System_16C%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/fantasy-zone-ii-dx-sega-system-16c" title="Fantasy Zone II DX / 3D Fantasy Zone II W">Fantasy Zone II DX / 3D Fantasy Zone II W</a>
+					<br />
+					<div class="stars stars45"></div>
+					<small>Arcade &bull; YM2151</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/enduro-racer"><img src="https://vgmrips.net/packs/images/tiny/Arcade/SegaSys/Enduro%20Racer.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/enduro-racer" title="Enduro Racer">Enduro Racer</a>
+					<br />
+					<div class="stars stars40"></div>
+					<small>Arcade &bull; YM2151, SegaPCM</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/turbo-out-run-arcade"><img src="https://vgmrips.net/packs/images/tiny/Arcade/Turbo_Out_Run_%28Arcade%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/turbo-out-run-arcade" title="Turbo Out Run">Turbo Out Run</a>
+					<br />
+					<div class="stars stars40"></div>
+					<small>Arcade &bull; YM2151, SegaPCM</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/after-burner-ii-sega-x"><img src="https://vgmrips.net/packs/images/tiny/Arcade/SegaSys/After_Burner_II_%28Sega_X%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/after-burner-ii-sega-x" title="After Burner II">After Burner II</a>
+					<br />
+					<div class="stars stars45"></div>
+					<small>Arcade &bull; YM2151, SegaPCM</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/power-drift-sega-y"><img src="https://vgmrips.net/packs/images/tiny/Arcade/Power_Drift_%28Sega_Y%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/power-drift-sega-y" title="Power Drift">Power Drift</a>
+					<br />
+					<div class="stars stars45"></div>
+					<small>Arcade &bull; YM2151, SegaPCM</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/gp-rider-sega-x"><img src="https://vgmrips.net/packs/images/tiny/Arcade/SegaSys/GP_Rider_%28Sega_X%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/gp-rider-sega-x" title="GP Rider">GP Rider</a>
+					<br />
+					<div class="stars stars40"></div>
+					<small>Arcade &bull; YM2151, SegaPCM</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/after-burner-sega-x"><img src="https://vgmrips.net/packs/images/tiny/Arcade/SegaSys/After_Burner_%28Sega_X%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/after-burner-sega-x" title="After Burner">After Burner</a>
+					<br />
+					<div class="stars stars40"></div>
+					<small>Arcade &bull; YM2151, SegaPCM</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/g-loc-air-battle-sega-y"><img src="https://vgmrips.net/packs/images/tiny/Arcade/SegaSys/G-LOC_Air_Battle_%28Sega_Y%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/g-loc-air-battle-sega-y" title="G-LOC Air Battle / R360 G-LOC">G-LOC Air Battle / R360 G-LOC</a>
+					<br />
+					<div class="stars stars35"></div>
+					<small>Arcade &bull; YM2151, SegaPCM</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/space-harrier-hang-on"><img src="https://vgmrips.net/packs/images/tiny/Arcade/Space_Harrier_%28Hang-On%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/space-harrier-hang-on" title="Space Harrier">Space Harrier</a>
+					<br />
+					<div class="stars stars45"></div>
+					<small>Arcade &bull; YM2203, SegaPCM</small>
+				</td>
+			</tr>
+			<tr>
+				<td class="thumb"><a href="https://vgmrips.net/packs/pack/armed-police-batrider-toaplan-2"><img src="https://vgmrips.net/packs/images/tiny/Arcade/Armed_Police_Batrider_%28Toaplan_2%29.png" alt=""></td>
+				<td>
+					<a href="https://vgmrips.net/packs/pack/armed-police-batrider-toaplan-2" title="Armed Police Batrider">Armed Police Batrider</a>
+					<br />
+					<div class="stars stars45"></div>
+					<small>Arcade &bull; YM2151, M6295, NMK112</small>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<div class="clearfix"></div>
+
+</div>
+<script type="text/javascript">
+	var packUrl = 'out-run-arcade';
+	var gameInfo = null;
+	var packReleases = null;
+	var packLinks = null;
+	var packName = 'Out Run';
+	var packImages = null;
+	var packData = null;
+	var autoRelease = null;
+</script>
+
+</div></article>
+
+<footer id='ftr'>
+	<div class='container'>
+		<div class="pull-left">&copy; VGMRips
+		&bull; <a target="_blank" href="https://vgmrips.net/forum"><span class="icon-forum"></span> Forum</a>
+			&bull; <a href="#" onclick="cb && cb.toggle(); event.preventDefault && event.preventDefault();">Chatbox</a>
+		</div>
+		<div class="pull-right">
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="hosted_button_id" value="8KAHBC7R5MZDL">
+			<input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
+			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</footer>
+
+
+<script type="text/javascript">
+var baseUrl = "https://vgmrips.net/packs";
+</script>
+<script type="text/javascript" src="https://vgmrips.net/packs/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://vgmrips.net/packs/js/bootstrap.min.js"></script>
+<script class="extra" type="text/javascript" src="https://vgmrips.net/packs/js/player.js"></script>
+<script class="extra" type="text/javascript" src="https://vgmrips.net/packs/js/pack.js"></script>
+<script class="extra" type="text/javascript" src="https://vgmrips.net/packs/js/jquery.cookie.js"></script>
+<script class="extra" type="text/javascript" src="https://vgmrips.net/packs/js/star-rating.min.js"></script>
+<script type="text/javascript" src="https://vgmrips.net/packs/../chat/chat2.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52363778-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+<!-- loaded in 0.184 -->
